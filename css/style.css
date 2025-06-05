@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
   color: #ffffff;
 }
@@ -271,7 +271,8 @@ section.icons .Icon-container .heading-tertiary {
 .interior-plans .container {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* .interior-plans .container .composition-1 {
@@ -279,44 +280,14 @@ section.icons .Icon-container .heading-tertiary {
 } */
 
 .interior-plans .container .composition-1 figure.composition {
-  height: 40rem;
+  height: 65vh;
   width: 100%;
 }
 
 .interior-plans .container .composition-1 figure.composition img {
   height: 100%;
   width: 100%;
-  border-radius: 15px;
-}
-
-/* .interior-plans .container .composition-2 {
-} */
-
-.interior-plans .container .composition-2 figure.composition {
-  height: 40rem;
-  width: 100%;
-}
-
-.interior-plans .container .composition-2 figure.composition img {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-}
-
-/* .interior-plans .container .composition-3 {
-} */
-
-/* .interior-plans .container .composition-4 {
-} */
-
-.interior-plans .container .composition-4 figure.composition {
-  height: 40rem;
-  width: 100%;
-}
-
-.interior-plans .container .composition-4 figure.composition img {
-  height: 100%;
-  width: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -367,25 +338,28 @@ section.icons .Icon-container .heading-tertiary {
 }
 
 .impressive-projects .container {
-  width: 100%;
   display: flex;
   gap: 2rem;
+  margin-top: 6rem;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .impressive-projects .container .composition-wrapper {
-  flex: 1;
+  width: 100%;
 }
 
 .impressive-projects .container figure.composition {
   width: 100%;
-  height: 30rem;
+  height: 40vh;
   margin-bottom: 2rem;
 }
 
 .impressive-projects .container .composition img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -411,6 +385,7 @@ section.icons .Icon-container .heading-tertiary {
 }
 
 section.about .container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 4rem;
@@ -442,7 +417,7 @@ section.about .textbox .btn {
 
 .color {
   position: absolute;
-  top: 370%;
+  top: -6rem;
   right: 0;
   height: 10rem;
   width: 10rem;
@@ -551,8 +526,9 @@ section.people .paragraph.sm {
 section.people .container.description {
   display: flex;
   gap: 3rem;
+  margin-top: 6rem;
   margin-bottom: 5rem;
-  justify-content: space-between;
+  width: 100%;
 }
 
 section.people .composition-1 .container {
@@ -571,7 +547,7 @@ section.people .composition-1 .container {
 section.people .container .composition-1 {
   position: relative;
   height: 45rem;
-  width: 40rem;
+  width: 100%;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -608,7 +584,7 @@ section.project {
       rgba(21, 19, 19, 0.53),
       rgba(46, 46, 42, 0.53)
     ),
-    url('/assets/comp13.jpg');
+    url("/assets/comp13.jpg");
   background-size: cover;
   background-position: center;
   padding: 10rem 10rem;
@@ -805,7 +781,6 @@ section.project input {
 
   .impressive-projects {
     text-align: center;
-    
   }
 
   .impressive-projects .textbox .heading-tertiary {
@@ -828,6 +803,7 @@ section.project input {
   .impressive-projects .container .composition img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 15px;
   }
 
@@ -838,28 +814,6 @@ section.project input {
   }
 
   .impressive-projects .container .composition-1 .textbox .icon span {
-    display: block;
-    font-size: 2.3rem;
-  }
-
-  .impressive-projects .container .composition-2 .textbox {
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-between;
-  }
-
-  .impressive-projects .container .composition-2 .textbox .icon span {
-    display: block;
-    font-size: 2.3rem;
-  }
-
-  .impressive-projects .container .composition-3 .textbox {
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-between;
-  }
-
-  .impressive-projects .container .composition-3 .textbox .icon span {
     display: block;
     font-size: 2.3rem;
   }
@@ -904,6 +858,10 @@ section.project input {
     font-size: 3.5rem;
   }
 
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
   .btn {
     padding: 1rem 2.5rem;
     font-size: 1.6rem;
@@ -946,8 +904,8 @@ section.project input {
   }
 
   .impressive-projects .container figure.composition {
-    height: 22rem;
-    width: 25rem;
+    height: 40vh;
+    width: 100%;
   }
 
   .impressive-projects .container .composition img {
@@ -963,28 +921,6 @@ section.project input {
   }
 
   .impressive-projects .container .composition-1 .textbox .icon span {
-    display: block;
-    font-size: 2.3rem;
-  }
-
-  .impressive-projects .container .composition-2 .textbox {
-    display: flex;
-    margin-top: 2rem;
-    gap: 10rem;
-  }
-
-  .impressive-projects .container .composition-2 .textbox .icon span {
-    display: block;
-    font-size: 2.3rem;
-  }
-
-  .impressive-projects .container .composition-3 .textbox {
-    display: flex;
-    margin-top: 2rem;
-    gap: 10rem;
-  }
-
-  .impressive-projects .container .composition-3 .textbox .icon span {
     display: block;
     font-size: 2.3rem;
   }
@@ -1050,6 +986,7 @@ section.project input {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    margin: 15rem 0;
   }
 
   section.process {
@@ -1062,6 +999,11 @@ section.project input {
 
   section.process .composition img {
     height: 50rem;
+  }
+
+  section.people .heading-secondary {
+    font-size: 2.8rem;
+    text-align: center;
   }
 }
 
@@ -1118,40 +1060,11 @@ section.project input {
     display: block;
     font-size: 2rem;
   }
-  .impressive-projects .container .composition-2 .textbox .icon span {
-    display: block;
-    font-size: 2rem;
-  }
-  .impressive-projects .container .composition-3 .textbox .icon span {
-    display: block;
-    font-size: 2rem;
-  }
 
   .interior-plans .container .composition-1 figure.composition img {
     height: 100%;
     width: 100%;
     border-radius: 15px;
-  }
-
-  .interior-plans .container .composition-2 figure.composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-  }
-
-  .interior-plans .container .composition-3 figure.composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-  }
-
-  .interior-plans .container .composition-4 figure.composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
   }
 
   .interior-plans .container {
@@ -1173,18 +1086,6 @@ section.project input {
     font-size: 1.4rem;
     width: 80%;
     margin: 0 auto;
-  }
-
-  .impressive-projects .container figure.composition {
-    height: 25rem;
-    width: 40rem;
-    object-fit: contain;
-  }
-
-  .impressive-projects .container .composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
   }
 
   .impressive-projects .container .composition-1 .textbox {
@@ -1215,14 +1116,6 @@ section.project input {
     display: block;
     font-size: 2rem;
   }
-  .impressive-projects .container .composition-2 .textbox .icon span {
-    display: block;
-    font-size: 2rem;
-  }
-  .impressive-projects .container .composition-3 .textbox .icon span {
-    display: flex;
-    font-size: 2rem;
-  }
 
   .interior-plans .container .composition-1 figure.composition img {
     height: 100%;
@@ -1261,18 +1154,6 @@ section.project input {
     font-size: 1.4rem;
     width: 80%;
     margin: 0 auto;
-  }
-
-  .impressive-projects .container figure.composition {
-    height: 25rem;
-    width: 30rem;
-    object-fit: contain;
-  }
-
-  .impressive-projects .container .composition img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
   }
 
   .impressive-projects .container .composition-1 .textbox {
@@ -1306,10 +1187,6 @@ section.project input {
     grid-template-rows: repeat(2, 30rem);
   }
 
-  section.process .process-list .process {
-    gap: 1.5rem;
-  }
-
   .interior-plans .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1319,12 +1196,16 @@ section.project input {
     margin-bottom: 5rem;
   }
 
-  section.process {
-    /* display: grid;
-    grid-template-columns: repeat(2, 30rem);
-    gap: 4rem; */
-    flex-direction: column;
-    margin-bottom: 10rem;
+  .impressive-projects .textbox .heading-tertiary {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .impressive-projects .textbox .paragraph {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .interior-plans .container {
@@ -1351,5 +1232,17 @@ section.project input {
     height: 100%;
     width: 100%;
     border-radius: 15px;
+  }
+
+  section.process {
+    /* display: grid;
+    grid-template-columns: repeat(2, 30rem);
+    gap: 4rem; */
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  section.process .process-list .process {
+    gap: 1.5rem;
   }
 }
