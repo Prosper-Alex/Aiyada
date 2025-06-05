@@ -392,8 +392,8 @@ section.about .container {
 }
 
 section.about figure.composition {
-  height: 40rem;
-  width: 40rem;
+  height: 40vh;
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -588,6 +588,10 @@ section.project {
   background-size: cover;
   background-position: center;
   padding: 10rem 10rem;
+}
+
+section.project .textbox .form-container--wrapper {
+  margin-top: 3rem;
 }
 
 .project .heading-secondary {
@@ -987,6 +991,7 @@ section.project input {
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 15rem 0;
+    padding: 0 3rem;
   }
 
   section.process {
@@ -1029,6 +1034,8 @@ section.project input {
     padding: 2rem;
   }
 
+  /* SECTION INTERIOR */
+
   .interior-plans .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1038,11 +1045,72 @@ section.project input {
     margin-bottom: 5rem;
   }
 
+  /* SECTION ABOUT */
+  .color {
+    position: absolute;
+    top: -10;
+    right: -4rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: #303542;
+    border-radius: 50%;
+    margin-right: 7rem;
+    z-index: -1;
+  }
+
+  /* SECTION PROCESS */
+
   section.process {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem;
     margin-bottom: 10rem;
+  }
+
+  /* SECTION PEOPLE */
+
+  section.people {
+    margin-bottom: 10rem;
+  }
+
+  section.people .container.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  /* SECTION PROJECT */
+
+  section.project {
+    min-width: 40vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(21, 19, 19, 0.53),
+        rgba(46, 46, 42, 0.53)
+      ),
+      url(/assets/comp13.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 10rem;
+  }
+
+  .project .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project .textbox .form-container--wrapper {
+    margin-top: 3rem;
+  }
+
+  .project .heading-secondary {
+    font-size: 3.5rem;
   }
 }
 
@@ -1168,6 +1236,11 @@ section.project input {
     font-size: 4rem;
   }
 
+  .heading-secondary.bg {
+    font-size: 3rem;
+    text-align: center;
+  }
+
   .heading-secondary {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -1234,6 +1307,24 @@ section.project input {
     border-radius: 15px;
   }
 
+  /* SECTION ABOUT */
+  section.about figure.composition {
+    height: 40vh;
+    width: 100%;
+  }
+  section.about figure.composition img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  section.about .textbox {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   section.process {
     /* display: grid;
     grid-template-columns: repeat(2, 30rem);
@@ -1244,5 +1335,89 @@ section.project input {
 
   section.process .process-list .process {
     gap: 1.5rem;
+  }
+
+  /* SECTION PROJECT */
+
+  section.project {
+    min-width: 40vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(21, 19, 19, 0.53),
+        rgba(46, 46, 42, 0.53)
+      ),
+      url(/assets/comp13.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    text-align: center;
+  }
+
+  .project .heading-secondary {
+    font-size: 2.5rem;
+  }
+
+  /* FOOTER */
+  .footer-container figure.logo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+    gap: 4rem;
+    border-bottom: #ffffff 0.5px solid;
+  }
+
+  .container-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* SECTION IMPRESSIVE */
+  .impressive-projects {
+    margin: 5rem 2rem;
+    text-align: center;
+  }
+
+  /* SECTION ABOUT */
+
+  section.about .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 15rem 0;
+    padding: 0 1rem;
+  }
+
+  /* SECTION PROJECT */
+
+  section.project {
+    min-width: 30vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(21, 19, 19, 0.53),
+        rgba(46, 46, 42, 0.53)
+      ),
+      url(/assets/comp13.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    text-align: center;
+  }
+
+  .form-container--wrapper {
+    display: none;
   }
 }
